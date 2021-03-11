@@ -1,0 +1,831 @@
+@font-face{
+    font-family: brand;
+    src: url('../fonts/CrimsonText-Regular.ttf');
+}
+*{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+header .newlink a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+.newlink a:hover{
+    color: rgb(149, 136, 114);
+}
+
+header nav .brand h1{
+    font-family: brand;
+    font-style: italic;
+}
+header nav{
+    padding: 28px 18px;
+    display: grid;
+    grid-template-areas: 
+    "ul1 brand ul2"
+    ;
+    grid-template-columns: 33% 33% 33%;
+    background: none;
+}
+nav .ul1{
+    grid-area: ul1;
+    display: grid;
+    grid-template-columns: repeat(3, 18%);
+    text-align: left;
+    align-content: center;
+}
+nav ul li{
+    list-style: none;
+}
+ul li a{
+    color: #000;
+    text-decoration: none;
+}
+nav .brand{
+    grid-area: brand;
+    text-align: center;
+    transform: rotate(-10deg);
+    letter-spacing: -1px;
+}
+.brand a{
+    color: #000;
+    text-decoration: none;
+}
+nav .ul2{
+    grid-area: ul2;
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(2, 18%);
+    justify-content: end;
+    align-content: center;
+}
+
+header .banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+/*    background: b-color b-img b-repeat b-attachement b-position;                                                                         */
+    background: #fff url('https://cdn.shopify.com/s/files/1/0019/6781/6770/files/image_1512x.jpg?v=1525432951') no-repeat fixed top center;
+    position: relative;
+    top: -98px;
+    z-index: -1;
+}
+
+
+/* two-section starts */
+.two-section{
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-top: -98px;
+    padding-top: 98px;
+}
+.two-section h1{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    letter-spacing: -1px;
+}
+.two-section .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "left right";
+}
+.grid .left{
+    grid-area: left;
+    padding: 58px;
+}
+.left .text{
+    padding: 18%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+.text p{
+    line-height: 23px;
+    margin-bottom: 58px;
+}
+.text a{
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid coral;
+}
+.grid .right{
+    grid-area: right;
+    padding: 58px;
+}
+
+.grid img{
+    width: 100%;
+}
+.grid .right{
+    margin-top: 100px;
+}
+
+
+/* another-two-section starts */
+.another-two-section{
+    background-color: #f0f0f0;
+}
+.another-two-section .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "left right"
+    ;
+}
+.another-two-section h1{
+    padding-top: 58px;
+    margin-left: 130px;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+.another-two-section .left, .another-two-section .right{
+    padding: 100px;
+}
+.another-two-section .grid .left{
+    margin-top: 38px;
+}
+.another-two-section .grid .right{
+    margin-top: 0px;
+}
+.another-two-section a{
+    text-decoration: none;
+    color: #000;
+}
+.another-two-section figure{
+    position: relative;
+}
+.another-two-section figure .onsale{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: tomato;
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    margin-top: 8px;
+    line-height: 26px;
+}
+.grid figcaption p span{
+    color: coral;
+}
+figcaption p .del{
+    color: grey;
+    text-decoration: line-through;
+}
+.right figcaption p span{
+    color: grey;
+}
+.grid .left figure img:hover{
+    content: url('../img/pic03hover.png');
+}
+.grid .right figure img:hover{
+    content: url('../img/pic04hover.png');
+}
+
+
+/* featured-section starts */
+.featured{
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "one two three four"
+    ;
+    padding: 80px 0;
+}
+.featured .padding{
+    padding: 0 20px;
+}
+.featured .padding a{
+    text-decoration: none;
+    color: #000;
+}
+.featured .one{
+    grid-area: one;
+    line-height: 58px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+.featured .one h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: -1px;
+}
+.featured .two{
+    grid-area: two;
+}
+.featured .three{
+    grid-area: three;
+}
+.featured .four{
+    grid-area: four;
+}
+.featured figure img{
+    width: 100%;
+}
+.featured figure figcaption p span{
+    color: grey;
+}
+.featured figure figcaption p .danger{
+    color: coral;
+}
+.featured .two figure img:hover{
+    content: url('../img/feature1hover.jpg');
+}
+.featured .three figure img:hover{
+    content: url('../img/feature2hover.jpg');
+}
+.featured .four figure img:hover{
+    content: url('../img/feature3hover.jpg');
+}
+
+
+/* two-section3 starts */
+.two-section3{
+    padding-top: 80px;
+}
+.two-section3 .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "left right"
+    ;
+}
+.two-section3 .left h1{
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-bottom: 100px;
+}
+.two-section3 .right{
+    margin-top: 100px;
+}
+.two-section3 .right p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 23px;
+    padding: 80px 38px;
+}
+
+
+/* plant-style starts */
+.plant-style .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "left right"
+    ;
+}
+.plant-style .right{
+    margin-top: 0;
+}
+.plant-style .right h1{
+    margin-top: 150px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.plant-style .right h1 a{
+    color: #000;
+    text-decoration: none;
+}
+.plant-style .right p{
+    margin: 28px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.plant-style form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.plant-style form .myinput{
+    display: inline-block;
+    border: 1px solid #000;
+}
+.plant-style form .substract{
+    display: inline-block;
+    color: grey;
+    padding: 0 13px;
+    cursor: pointer;
+}
+.plant-style form .addition{
+    display: inline-block;
+    color: grey;
+    padding: 0 13px;
+    cursor: pointer;
+}
+.plant-style form input{
+    width: 168px;
+    height: 50px;
+    border: 0;
+}
+.plant-style form button{
+    display: block;
+    width: 68%;
+    height: 50px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    margin-top: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+/* footer / newsletter */
+footer .newsletter{
+    padding: 80px 58px;
+    display: grid;
+    grid-template-areas: 
+    "h1 p form"
+    ;
+    align-items: center;
+}
+.newsletter h1{
+    grid-area: h1;
+    font-size: 2.1rem;
+    font-weight: 100;
+}
+.newsletter p{
+    grid-area: p;
+    font-size: 0.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 0 13%;
+}
+.newsletter form{
+    grid-area: form;
+    justify-self: end;
+}
+.newsletter form input{
+    width: 380px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+.newsletter form button{
+    width: 100px;
+    height: 50px;
+    font-size: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+form button:hover{
+    background-color: coral;
+}
+
+/* middle-footer starts */
+footer .middle-footer{
+    padding: 80px 58px;
+    display: grid;
+    grid-template-areas: 
+    "brand1 p ulone ultwo email"
+    ;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 10% 35% 10% 10% 35%;
+    align-items: start;
+}
+.middle-footer .brand{
+    grid-area: brand1;
+}
+.middle-footer .brand h1{
+    font-family: brand;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+.middle-footer .brand .social{
+    margin-top: 28px;
+    word-spacing: 18px;
+}
+.middle-footer p{
+    grid-area: p;
+    font-size: 0.65rem;
+    padding: 0 13%;
+    padding-top: 16px;
+}
+.middle-footer p a{
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 1px;
+    border-bottom: 1px solid coral;
+}
+.middle-footer ul li{
+    list-style-type: none;
+    font-size: 0.65rem;
+}
+.middle-footer .first-ul{
+    grid-area: ulone;
+    line-height: 38px;
+}
+.middle-footer .second-ul{
+    grid-area: ultwo;
+    line-height: 38px;
+}
+.middle-footer .email{
+    grid-area: email;
+    justify-self: end;
+}
+.email p{
+    padding: 0;
+}
+.email input{
+    width: 58%;
+    height: 50px;
+    padding-left: 8px;
+    letter-spacing: 1px;
+}
+.email button{
+    width: 38%;
+    height: 50px;
+    font-size: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* bottom-footer starts */
+footer .bottom-footer{
+    padding: 0 58px;
+    padding-bottom: 98px;
+    display: grid;
+    grid-template-areas: 
+    "copywrite payments";
+    justify-content: space-between;
+}
+.bottom-footer .copywrite{
+    grid-area: copywrite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    line-height: 38px;
+}
+.copywrite p a, .copywrite small a{
+    color: #000;
+    text-decoration: none;
+}
+.bottom-footer .payments{
+    grid-area: payments;
+}
+
+
+/* media query */
+@media only screen and (max-width:1023px){
+    /* footer */
+    footer .middle-footer p{
+        padding-left: 15%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    html{
+        font-size: 15px;
+    }
+    /* header */
+    nav .ul1, nav .ul2{
+        grid-column-gap: 18px;
+    }
+
+    /* two-section */
+    .two-section h1{
+        font-size: 2rem;
+    }
+    .grid .left, .grid .right{
+        padding: 18px;
+    }
+
+    /* another-two-section */
+    .another-two-section .left, .another-two-section .right{
+        padding: 68px;
+    }
+
+    /* featured-section starts */
+    .featured{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "one two"
+        "three four";
+        padding: 80px 0;
+    }
+    .featured .padding{
+        padding: 0 18px;
+    }
+    .featured .one{
+        line-height: 38px;
+    }
+    
+    /* two-section3 */
+    .two-section3 .left h1{
+        font-size: 2.3rem;
+        margin-bottom: 80px;
+    }
+    .two-section3 .right p{
+        line-height: 20px;
+        padding: 50px 18px;
+    }
+
+    /* plant-style */
+    .plant-style .right h1{
+        margin-top: 38px;
+    }
+    .plant-style .right p{
+        margin: 18px 0;
+    }
+    .plant-style form .substract{
+        padding: 0 10px;
+    }
+    .plant-style form .addition{
+        padding: 0 10px;
+    }
+    .plant-style form input{
+        width: 118px;
+        height: 50px;
+        border: 0;
+    }
+    .plant-style form button{
+        width: 96%;
+        margin-top: 28px;
+    }
+
+    /* footer */
+    footer .newsletter{
+        padding: 58px 18px;
+    }
+    .newsletter h1{
+        font-size: 1.5rem;
+    }
+    .newsletter form input{
+        width: 68%;
+        height: 38px;
+    }
+    .newsletter form button{
+        width: 28%;
+        height: 38px;
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+
+    footer .middle-footer{
+        grid-template-columns: 10% 35% 10% 10% 35%;
+        padding: 58px 18px;
+    }
+    .middle-footer .brand .social{
+        margin-top: 18px;
+        word-spacing: 10px;
+    }
+    .middle-footer .brand h1{
+        margin-top: -5px;
+        font-size: 1.5rem;
+    }
+    .middle-footer p{
+        padding-top: 5px;
+    }
+    .middle-footer .first-ul, .middle-footer .second-ul{
+        line-height: 18px;
+    }
+    .email p{
+        padding-left: 0 !important;
+    }
+    .middle-footer form input{
+        width: 68%;
+        height: 38px;
+    }
+    .middle-footer form button{
+        width: 28%;
+        height: 38px;
+        font-size: 0.6rem;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+
+    footer .bottom-footer{
+        padding: 58px 18px;
+    }
+    .bottom-footer .copywrite{
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    /* header */
+    nav .ul1, nav .ul2{
+        grid-column-gap: 26px;
+    }
+
+    /* two-section */
+    .two-section h1{
+        font-size: 28px;
+    }
+    .two-section .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+    .grid .left, .grid .right{
+        padding: 18px;
+        margin-top: 0;
+    }
+    .left .text{
+        padding: 8%;
+        text-align: left;
+    }
+    .text p{
+        line-height: 20px;
+        margin-bottom: 38px;
+    }
+
+    /* another-two-section starts */
+    .another-two-section .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+    .another-two-section h1{
+        margin-left: 0;
+        text-align: center;
+    }
+    .another-two-section .left, .another-two-section .right{
+        padding: 18px;
+    }
+    figcaption{
+        font-size: 1rem;
+        margin-top: 6px;
+        line-height: 26px;
+    }
+
+
+
+    /* two-section3 starts */
+    .two-section3{
+        padding-top: 80px;
+    }
+    .two-section3 .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+    .two-section3 .left h1{
+        font-size: 2.5rem;
+        margin-bottom: 38px;
+    }
+    .two-section3 .right{
+        margin-top: 0;
+    }
+    .two-section3 .right p{
+        line-height: 20px;
+        padding: 50px 18px;
+    }
+
+    /* plant-style starts */
+    .plant-style .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "left"
+        "right";
+    }
+    .plant-style .right h1{
+        margin-top: 0px;
+    }
+    .plant-style .right p{
+        margin: 18px 0;
+    }
+    .plant-style form .myinput{
+        width: 100%;
+        margin-top: 18px;
+    }
+    .plant-style form .substract{
+        padding: 0 5%;
+    }
+    .plant-style form .addition{
+        padding: 0 5%;
+    }
+    .plant-style form input{
+        width: 70%;
+    }
+    .plant-style form button{
+        width: 100%;
+        margin-top: 28px;
+    }
+
+    /* footer / newsletter */
+    footer .newsletter{
+        padding: 50px 18px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "h1"
+        "p"
+        "form";
+    }
+    .newsletter p{
+        font-size: 0.65rem;
+        padding: 5% 0%;
+    }
+    .newsletter form{
+        justify-self: center;
+        width: 100%;
+    }
+    .newsletter form input{
+        width: 48%;
+        text-align: center;
+    }
+    .newsletter form button{
+        width: 48%;
+    }
+
+    /* middle-footer starts */
+    footer .middle-footer{
+        padding: 50px 18px;
+        grid-template-areas: 
+        "brand1"
+        "p"
+        "ulone"
+        "ultwo"
+        "email";
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+    .middle-footer .brand .social{
+        margin-top: 8px;
+        word-spacing: 18px;
+    }
+    .middle-footer p{
+        padding: 16px 0 !important;
+    }
+    .middle-footer ul li{
+        float: left;
+        margin-right: 8px;
+    }
+    .middle-footer .first-ul{
+        line-height: 28px;
+    }
+    .middle-footer .second-ul{
+        line-height: 28px;
+    }
+    .middle-footer .email{
+        justify-self: center;
+        width: 100%;
+    }
+    .email input{
+        width: 58%;
+    }
+    .email button{
+        width: 40%;
+        margin-top: 0px;
+    }
+
+    /* bottom-footer starts */
+    footer .bottom-footer{
+        padding: 0 18px;
+        padding-bottom: 58px;
+        grid-template-areas: 
+        "copywrite"
+        "payments";
+        justify-content: stretch;
+    }
+    .bottom-footer .copywrite{
+        line-height: 18px;
+        text-align: center;
+    }
+    .copywrite p, .copywrite small{
+        display: inline-block;
+        margin-right: 8px;
+    }
+    .bottom-footer .payments{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .payments img{
+        margin-right: 1%;
+    }
+}
