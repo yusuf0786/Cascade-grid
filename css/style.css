@@ -504,7 +504,7 @@ footer .bottom-footer{
     }
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
     html{
         font-size: 15px;
     }
