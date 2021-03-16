@@ -324,13 +324,13 @@ figcaption p .del{
     display: inline-block;
     border: 1px solid #000;
 }
-.plant-style form .substract{
+#substract{
     display: inline-block;
     color: grey;
     padding: 0 13px;
     cursor: pointer;
 }
-.plant-style form .addition{
+#addition{
     display: inline-block;
     color: grey;
     padding: 0 13px;
@@ -558,10 +558,10 @@ footer .bottom-footer{
     .plant-style .right p{
         margin: 18px 0;
     }
-    .plant-style form .substract{
+    #substract{
         padding: 0 10px;
     }
-    .plant-style form .addition{
+    #addition{
         padding: 0 10px;
     }
     .plant-style form input{
@@ -724,10 +724,10 @@ footer .bottom-footer{
         width: 100%;
         margin-top: 18px;
     }
-    .plant-style form .substract{
+    #substract{
         padding: 0 5%;
     }
-    .plant-style form .addition{
+    #addition{
         padding: 0 5%;
     }
     .plant-style form input{
