@@ -28,16 +28,29 @@ header .newlink a{
     color: rgb(149, 136, 114);
 }
 
+header .toggle-display{
+    display: none;
+}
+header .toggle-down{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4%;
+    position: relative;
+    top: 8px;
+}
+.toggle-down .right{
+    text-align: right;
+}
+
 header nav .brand h1{
     font-family: brand;
     font-style: italic;
 }
 header nav{
-    padding: 28px 18px;
+    padding: 28px 28px;
     display: grid;
     grid-template-areas: 
-    "ul1 brand ul2"
-    ;
+    "ul1 brand ul2";
     grid-template-columns: 33% 33% 33%;
     background: none;
 }
@@ -637,8 +650,29 @@ footer .bottom-footer{
 
 @media only screen and (max-width:425px){
     /* header */
-    nav .ul1, nav .ul2{
-        grid-column-gap: 26px;
+    header .toggle-display{
+        display: block;
+    }
+    header nav{
+        padding: 8px 8px;
+        margin-top: -20px;
+    }
+    nav ul{
+        margin-top: 23px;
+    }
+    header .display-ul1, header .display-ul2{
+        display: none;
+    }
+    nav .ul1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    nav ul li{
+        margin-bottom: 4px;
+    }
+    nav .ul2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     /* two-section */
