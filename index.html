@@ -10,24 +10,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
     <header>
         <div class="newlink"><a href="#">Our new plant book is now available get it here.</a></div>
+        <div class="toggle-display">
+            <div class="toggle-down">
+                <span class="fa fa-angle-down left"></span>
+                <span class="fa fa-angle-down right"></span>
+            </div>
+        </div>
         <nav>
-            <ul class="ul1">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Articles</a></li>
-            </ul>
+            <div class="display-ul1">
+                <ul class="ul1">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Articles</a></li>
+                </ul>
+            </div>
 
             <div class="brand">
                 <h1><a href="#">Cascade</a></h1>
             </div>
 
-            <ul class="ul2">
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Cart</a></li>
-            </ul>
+            <div class="display-ul2">
+                <ul class="ul2">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
         </nav>
 
         <section class="banner"></section>
@@ -146,7 +156,7 @@
                             <div id="substract"><span class="fa fa-minus" onclick="minus();"></span></div>
 
                             <input type="number" id="quantity" value="0">
-    
+
                             <div id="addition"><span class="fa fa-plus" onclick="addition()"></span></div>
                         </div>
                     </label>
