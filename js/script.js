@@ -8,3 +8,8 @@ function addition(){
     document.getElementById("quantity").value=b;
     b=b+1;
 }
+
+
+$(".toggle-down .left, .toggle-down .right").click(function(){
+    $(".display-ul1, .display-ul2").slideToggle();
+});
