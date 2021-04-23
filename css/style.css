@@ -358,7 +358,7 @@ figcaption p .del{
 }
 .plant-style form button{
     display: block;
-    width: 68%;
+    width: 348px;
     height: 50px;
     color: #fff;
     background-color: #000;
@@ -470,13 +470,13 @@ footer .middle-footer{
     padding: 0;
 }
 .email input{
-    width: 58%;
+    width: 68%;
     height: 50px;
     padding-left: 8px;
     letter-spacing: 1px;
 }
 .email button{
-    width: 38%;
+    width: 30%;
     height: 50px;
     font-size: 0.8rem;
     background-color: #000;
@@ -512,14 +512,8 @@ footer .bottom-footer{
 
 
 /* media query */
-@media only screen and (max-width:1023px){
-    /* footer */
-    footer .middle-footer p{
-        padding-left: 15%;
-    }
-}
+@media only screen and (max-width:1024px){
 
-@media only screen and (max-width:1000px){
     html{
         font-size: 15px;
     }
@@ -579,14 +573,8 @@ footer .bottom-footer{
     #addition{
         padding: 0 10px;
     }
-    .plant-style form input{
-        width: 118px;
-        height: 50px;
-        border: 0;
-    }
     .plant-style form button{
-        width: 96%;
-        margin-top: 28px;
+        width: 306px;
     }
 
     /* footer */
@@ -595,6 +583,9 @@ footer .bottom-footer{
     }
     .newsletter h1{
         font-size: 1.5rem;
+    }
+    .newsletter form {
+        width: 100%;
     }
     .newsletter form input{
         width: 68%;
@@ -620,6 +611,7 @@ footer .bottom-footer{
         font-size: 1.5rem;
     }
     .middle-footer p{
+        padding-left: 15%;
         padding-top: 5px;
     }
     .middle-footer .first-ul, .middle-footer .second-ul{
@@ -646,6 +638,10 @@ footer .bottom-footer{
     .bottom-footer .copywrite{
         line-height: 28px;
     }
+}
+
+@media only screen and (max-width:768px) {
+
 }
 
 @media only screen and (max-width:425px){
@@ -717,8 +713,6 @@ footer .bottom-footer{
         margin-top: 6px;
         line-height: 26px;
     }
-
-
 
     /* two-section3 starts */
     .two-section3{
@@ -792,11 +786,10 @@ footer .bottom-footer{
         width: 100%;
     }
     .newsletter form input{
-        width: 48%;
-        text-align: center;
+        width: 68%;
     }
     .newsletter form button{
-        width: 48%;
+        width: 30%;
     }
 
     /* middle-footer starts */
@@ -831,13 +824,6 @@ footer .bottom-footer{
     .middle-footer .email{
         justify-self: center;
         width: 100%;
-    }
-    .email input{
-        width: 58%;
-    }
-    .email button{
-        width: 40%;
-        margin-top: 0px;
     }
 
     /* bottom-footer starts */
